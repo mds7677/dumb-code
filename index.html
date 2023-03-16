@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- импортнуть библиотеку -->
+<head>
+    <script src="https://kit.fontawesome.com/b381d165e4.js" crossorigin="anonymous"></script>
+    <title>python</title>
+    
+    
+</head>
+<body class="specific"><div class="header">
+    <h1 class="flex">Электронное пособие по операторам Python</h1>
+    <hr>
+</div>
+<div class="main">
+    <div class="types ">
+        <ul class="list ">
+            <li>
+                <b id="firstbutton"><a href="#vvod" class="firstbutton">Ввод\Вывод данных.</a></b><i id="right" class="fa-solid fa-arrow-right"></i><i id="down" class=" hide fa-solid fa-arrow-down "></i>
+                <div id="modernlist" class="hide">
+                <p><a href="#vvod" class="underli" >Вывод данных в консоль</a></p> 
+                <a href="#keyboard" class="underli" >Ввод данных с клавиатуры</a>    
+                <p><a href="#intput" class="underli" >int(input())</a> </p>
+            </div>
+            </li>
+            <li>
+                <b id="second" ><a href='#secondbutton' class="firstbutton">Условные операторы.</a></b><i id="2" class="fa-solid fa-arrow-right"></i><i id="3" class="fa-solid fa-arrow-down hide"></i>
+                <div id="modernlist2" class="hide">
+                <p> <a href="#ysl" class="underli">Условный оператор ветвления if</a></p>
+                <p><a href="#break" class="underli">Операторы break и continue</a></p>
+            </div>
+            </li>
+            <li>
+                <b id="third" ><a href='#fbp' class="firstbutton">Циклы.</a></b><i id="2.1" class="fa-solid fa-arrow-right"></i><i id="3.1" class="fa-solid fa-arrow-down hide"></i>
+                <div id="modernlist3" class="hide">
+                <p><a href="#while" class="underli">Оператор цикла while</a></p>
+                <p><a href="#for" class="underli">Оператор цикла for</a></p>
+                <p> <a href="#pattern" class="underli">Pattern match</a></p>
+            </div>
+            </li>
+            <li>
+            <b id="tasking" class="firstbutton">Задания</b>
+            </li>
+        <p class="bottom "id="bottom">Главная</p>
+        </ul>
+    </div>
+            
+    <div id="main" class="info">
+        <h1>Главная</h1>
+        <p>Python – это универсальный язык, который можно использовать для создания всевозможных приложений. Мы рассмотрим основные операторы в Python. Вы должны хорошо понимать, как использовать основные операторы в Python.
+            Давайте разберёмся, что такое операторы. Операторы – это конструкции, которые могут управлять значением операндов.</p>
+            <p>В Python есть множество операторов, которые можно использовать для выполнения операций над переменными и значениями. Наиболее распространенными операторами являются арифметические операторы, которые используются для выполнения математических операций, таких как сложение, вычитание, умножение и деление.
+                Существуют также операторы условия, которые используются для выбора, какое действие следует выполнить, в зависимости от значения переменных в момент проверки условия.
+            </p>
+        <table class="table">
+            <thead>
+                <tr>
+                <th> Оператор </th> <th> Описание </th> <th></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+(Сложение)</td><td>Добавляет значения к оператору</td>
+                </tr>
+                <tr><td>- (Вычитание)</td><td>Вычитает значения переменных</td></tr>
+                    <tr><td>* (Умножение)</td><td>Умножает значения переменных</td></tr>
+                        <tr><td>/ (Деление)</td><td>Делит значения переменных</td></tr>
+                            <tr><td>% (Деление с получением остатка)</td><td>Делит значения переменных и возвращает остаток</td></tr>
+            </tbody>
+        </table> 
+        <p>if/else(условие)
+            Условная инструкция if/else - основной инструмент выбора в Python.  Она выбирает, какое действие следует выполнить, в зависимости от значения переменных в момент проверки условия.
+        </p>
+        <p></p>
+        <table>
+            <thead>
+                <tr>
+                <th> Оператор </th> <th> Описание </th> <th></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr><td>==</td><td>Если значения двух переменных равны-верно</td>
+                </tr>
+                <tr> <td>!=</td><td>Если значения двух переменных не равны-верно</td>
+                </tr>
+                <tr> <td>></td><td>если значение левой переменной больше значения правой-верно </td>
+                </tr>
+                <tr><td><</td><td>если значение левой переменной меньше значения правой-верно</td>
+                </tr>
+                <tr> <td>>=</td><td>если значение левой переменной больше или равно значения правой-верно</td>
+                </tr>
+                <tr> <td><=</td><td>если значение левой переменной меньше или равно значения правой-верно</td>
+                </tr>
+                <tr><td>and(&)</td><td>Если два значения верны, тогда условие становится истинным</td></tr>
+                <tr><td>or(|)</td><td>Если хотя бы одно значение верно, тогда условие становится истинным</td></tr>
+            </tbody>
+        </table>
+        <p>На нашем сайте вы можете ознакомится с этими понятиями получше</p>
+    </div>
+    <div id="secondpaper" class="hide">
+        <h1 id="vvod" class="section">Вывод данных в консоль</h1>
+    <p>Один из самых распространенных способов вывести данные в Python – это напечатать их в консоли.Если вы находитесь на этапе изучения языка, такой способ является основным для того, чтобы быстро просмотреть результат свой работы.Для вывода данных в консоль используется функция print.
+
+    <h2>Рассмотрим основные способы использования данной функции.</h2>
+
+    <pre class="testpage">
+    <p>>>> print("Hello")</p>
+    <p>Hello</p>
+    <p>>>> print("Hello, " + "world!")</p>
+    <p>Hello, world!</p>
+    <p>>>> print("Age: " + str(23))</p>
+    <p>Age: 23</p>
+        </pre>
+
+    <h2 id="keyboard" class="section">Ввод данных с клавиатуры</h2>
+    <h3>Для считывания вводимых с клавиатуры данных используется функция input().</h3>
+    <pre class="testpage">
+<p>>>> input()</p>
+<p>test</p>
+<p>'test'</p>
+    </pre>
+<h3>Для сохранения данных в переменной используется следующий синтаксис.</h3>
+    <pre class="testpage">
+        <p>>>> a = input()</p>
+        <p>hello</p>
+        <p>>>> print(a)</p>
+        <p>hello</p>
+</pre>
+<h3 id="intput" >Если считывается с клавиатуры целое число, то строку, получаемую с помощью функции input(), можно передать сразу в функцию int().</h3>
+    <pre class="testpage">
+        <p>>>> val = int(input())</p>
+        <p>123</p>
+        <p>>>> print(val)</p>
+        <p>123</p>
+        <p>>>> type(val)</p>
+    </pre>
+    <p class="hi">dasda</p>
+    <p class="hi">asdada</p>
+    </div>
+    <div id="gype" class="hide">
+        <h1 id="secondbutton" class="section">Условные операторы.</h1>
+        <h2 id="ysl" class="section">Условный оператор ветвления if</h2>
+<p>Оператор ветвления if  позволяет выполнить определенный набор инструкций в зависимости от некоторого условия. Возможны следующие варианты использования.
+После оператора if  записывается выражение. Если это выражение истинно, то выполняются инструкции, определяемые данным оператором. Выражение является истинным, если его результатом является число не равное нулю, непустой объект, либо логическое True. После выражения нужно поставить двоеточие “:”.
+блок кода, который необходимо выполнить, в случае истинности выражения, отделяется четырьмя пробелами слева!</p>
+Пример:
+<pre class="testpage">
+<p>a = 3</p>
+if a == 3:
+    <p>print("hello 2")</p>
+
+<p class="coment">//Напечатает: hello 2</p>
+</pre>
+<h2 id="break" class="section">Операторы break и continue</h2>
+<p>При работе с циклами используются операторы break  и continue.
+Оператор break  предназначен для досрочного прерывания работы цикла while.</p>
+
+Пример.
+<pre class="testpage">
+<p>a = 0</p>
+while a >= 0:
+   <p>if a == 7:</p>
+       break
+   <p>a += 1</p>
+   print("A")
+
+<p class="coment">//В приведенном выше коде, выход из цикла произойдет при достижении переменной a
+значения 7. Если бы не было этого условия, то цикл выполнялся бы бесконечно.</p>
+</pre>  
+<p>Оператор continue  запускает цикл заново, при этом код, расположенный после данного оператора, не выполняется.</p>
+
+Пример.
+<pre class="testpage">
+<p>a = -1</p>
+while a < 10:
+   <p>a += 1</p>
+   if a >= 7:
+       <p>continue</p>
+   print("A")
+<p class="coment">//При запуске данного кода символ “А” будет напечатан 7 раз, несмотря на то, 
+    что всего будет выполнено 11 проходов цикла.</p>
+</pre>
+    </div>
+    <div id="sick" class="hide">
+        <h1 id="fbp" class="section">Циклы </h1>
+    <h2 id="while">Оператор цикла while</h2>
+<p>Оператор цикла while  выполняет указанный набор инструкций до тех пор, пока условие цикла истинно. Истинность условия определяется также как и в операторе if. Синтаксис оператора while  выглядит так.</p>
+
+while выражение:
+<pre class="testpage">
+    <p>инструкция_1</p>
+    инструкция_2
+    <p>...</p>
+    инструкция_n
+
+<p class="coment">//Выполняемый набор инструкций называется телом цикла.</p>
+</pre>
+<p>Пример.</p>
+<pre class="testpage">
+a = 0
+<p>while a < 7:</p>
+   print("A")
+   <p>a += 1</p>
+
+<p class="coment">//Буква “А” будет выведена семь раз в столбик.</p>
+</pre>
+<h2 id="for">Оператор цикла for</h2>
+Оператор for  выполняет указанный набор инструкций заданное количество раз, которое определяется количеством элементов в наборе.
+
+<p>Пример.</p> 
+<pre class="testpage">
+for i in range(5):
+   <p>print("Hello")</p>
+
+<p class="coment">//В результате “Hello” будет выведено пять раз.</p>
+</pre>
+<h2 class="section" id="pattern">Pattern match</h2>
+В новом релизе Python 3.10 появились операторы case/match, которые отвечают за реализацию в языке синтаксиса pattern-matching.
+
+Python, несмотря на его простоту и популярность, в отличие от других языков, не имел отдельной формы управления потоком (form of flow control) — способа взять значение и элегантно сопоставить его с одним из множества возможных условий. В C и C++ эта функция реализована конструкцией switch/case, а в Rust она называется pattern matching.
+
+<p>Изящных способов реализовать это в Python, кроме как воспользоваться конструкцией if/elif/else и поиском по словарю, до этого момента не существовало. Оба способа работают, но из-за своей громоздкости они могли затруднить читабельность кода.</p>
+
+За последние годы были предприняты несколько попыток включить синтаксис типа switch/case в Python, но все они провалились. Это первая реализация структурного сопоставления шаблонов (structural pattern matching), которая сейчас доступна только в версии для разработчиков.
+<p>Структурное сопоставление шаблонов (structural pattern matching) вводит оператор match/case, который работает по той же схеме, что и switch/case. Оператор проверяет объект на соответствие одному или нескольким шаблонам и, если совпадение найдено, выполняет действие.
+<pre class="testpage">
+    match command:
+    <p>case "quit":</p>
+        quit()
+    <p>case "reset":</p>
+        reset()
+    <p>case unknown_command:</p>
+        print (f"Unknown command'{unknown_command}'")
+    </pre>
+    За каждым выражением case следует шаблон для сопоставления. В данном примере сверху вниз идет сопоставление строк с оператором, и если такое сопоставление найдено, оператор выполняется. Также можно захватить все или часть совпадения и повторно использовать их. В нашем примере в случае с шаблоном сопоставления unknown_command мы использовали его повторно внутри f-строки.
+    <p>Если вы хотите сопоставить значение с константами, то константы следует отнести к полям класса:</p>
+    <pre class="testpage">
+        class Command:
+    <span>QUIT = 0</span>
+    <span>RESET = 1</span>
+        <p>command = 0</p>
+        match command:
+    <p>case Command.QUIT:</p>
+        <span>quit()</span>
+        <p>case Command.RESET:</p>
+            <span>reset()</span>
+        </pre>
+        Если вы попробуете сделать это не прибегая к классам, например, так:
+        <pre class="testpage">
+        <span>QUIT = 0</span>
+        <span>RESET = 1</span>
+            <p>command = 0</p>
+            match command:
+        <p>case Command.QUIT:</p>
+            <span>quit()</span>
+            <p>case RESET:</p>
+                <span>reset()</span>
+            </pre>
+            Получите в ответ ошибку, связанную с тем, что имя не относится к известному паттерну:
+            <pre class="testpage">
+                <p class="red">name capture 'QUIT' makes remaining patterns unreachable</p>
+            </pre>
+</div>
+<div id="tasks" class="hide">
+    <h1 >Задания</h1>
+    <h2>1 Задание</h2>
+    <p>Given two integer numbers return their product only if the product is equal to or lower than 1000, else return their sum.</p>
+    <p>Given 1:</p>
+    <pre class="testpage">
+num1 = 20
+num2 = 30
+    </pre>
+    <p>Expected Output:</p>
+    <pre class="testpage">
+The result is 600
+    </pre>
+    <h2 id="taskinging" class="byt">Решение:</h2>
+    <pre id="test1" class="testpage hide">
+    product = num1 * num2
+    if product <= 1000:
+        return product
+    else:
+        return num1 + num2
+    
+    result = multiplication_or_sum(20, 30)
+    print("The result is", result)
+
+    </pre>
+    <h2>2 Задание</h2>
+    <p>Write a program to iterate the first 10 numbers and in each iteration, print the sum of the current and previous number.</p>
+    <p>Expected Output:</p>
+    <pre class="testpage">
+    Printing current and previous number sum in a range(10)
+    Current Number 0 Previous Number  0  Sum:  0
+    Current Number 1 Previous Number  0  Sum:  1
+    Current Number 2 Previous Number  1  Sum:  3
+    Current Number 3 Previous Number  2  Sum:  5
+    Current Number 4 Previous Number  3  Sum:  7
+    Current Number 5 Previous Number  4  Sum:  9
+    Current Number 6 Previous Number  5  Sum:  11
+    Current Number 7 Previous Number  6  Sum:  13
+    Current Number 8 Previous Number  7  Sum:  15
+    Current Number 9 Previous Number  8  Sum:  17
+    </pre>
+    <h2 id="taskinging1" class="byt">Решение:</h2>
+    <pre id="test2" class="testpage hide">
+print("Printing current and previous number and their sum in a range(10)")
+previous_num = 0
+        
+        
+for i in range(1, 11):
+    x_sum = previous_num + i
+    print("Current Number", i, "Previous Number ", previous_num, " Sum: ", x_sum
+    previous_num = i
+
+    </pre>
+    <h2>3 Задание*</h2>
+    <p>Write a program to accept a string from the user and display characters that are present at an even index number.
+
+        For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.</p>
+    <p>Expected Output:</p>
+    <pre class="testpage">
+Orginal String is  pynative
+Printing only even index chars
+p
+n
+t
+v
+    </pre>
+    <h2 id="taskinging2" class="byt">Решение:</h2>
+    <pre id="test3" class="testpage hide">
+word = input('Enter word ')
+print("Original String:", word)      
+size = len(word)
+print("Printing only even index chars")
+for i in range(0, size - 1, 2):
+    print("index[", i, "]", word[i])
+    </pre>
+</div>
+</body>
+<link rel="stylesheet" href="css.css">
+<script src="js.js"></script>
+
+  
